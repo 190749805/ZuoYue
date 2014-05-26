@@ -1,0 +1,44 @@
+<include file="./Home/Tpl/Common/head.html" />
+<script src="__PUBLIC__/Js/publish.js"></script>
+<include file="./Home/Tpl/Common/header.html" />
+<div class="container">
+	<div class="col-md-7 head_row" id="div-zx-content">
+	<input type="hidden" id="session_info"name="session" value="{$session}"/>
+			<p id="talk"><img src="__PUBLIC__/Images/glyphicons_006_user_add.png"/>咨询</p>
+			<div class="col-md-12 head_row_head">
+				<br/>
+				<table>	
+					<volist name="list" id="vo">
+						<tr>
+							<td class="t_table_p"><a class="a" name="{$vo.id}" href="__URL__/view_zx?id={$vo.id}"><p>{$vo.title}</p></p></a></td>
+							<td class="t1_table_p"><p>{$vo.pub_date}</p></td>
+						</tr>
+					</volist>
+				</table>
+				{$page}
+			</div>
+		
+	</div>
+	<button class="btn info-btn btn-primary" id="h2-zx">+发表咨询</button></div>	
+</div>
+<div>
+<div class="container">
+	<form action="__URL__/upload_photo" method="post" enctype="multipart/form-data">
+	<div id="div-zx" style="display:none;">
+		<div>
+		  主题：<input type="text" placeholder="请输入主题" name="title" id="zx-title"/>
+		  <span id="span-title" style="color:red;"></span>
+		  <p>上传图片(<span style="color:red;">不要超过5M)</span>：<input type="file" name="photo" /></p>
+		</div>
+		咨询描述：<div><textarea name="content" id="zx-content" cols="100" rows="10"></textarea>
+		<span id="span-content" style="color:red;"></span><br/><br/>
+		<div class="btn-group dropup">
+			<button class="btn btn-primary" id="qr">发表</button>
+		</div>
+		<div class="btn-group dropup">
+			<button type="button" class="btn btn-primary" id="qx">取消</button>
+		</div>
+		</div>
+	</form>
+	</div>
+</div>

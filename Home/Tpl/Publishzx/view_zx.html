@@ -1,0 +1,19 @@
+<include file="./Home/Tpl/Common/head.html" />
+<script src="__PUBLIC__/Js/publish.js"></script>
+<include file="./Home/Tpl/Common/header.html" />
+
+	<h2 id="{$va['id']}">{$va['desc']}</h2><img src="../../{$va['photo']}" />
+	<br/>
+	<volist name="list" id="vo">
+		<h4>{$vo.comment}-----{$vo.time}</h4>
+			<span class="a-span" id="span-{$vo2.id}"></span>
+		<ul id="ul{$vo2.id}">
+
+		</ul>
+	</volist>
+{$page}<br/>
+
+	评论：<textarea id="textarea-comment" name="{$va['id']}" style="width:900px;height:120px;"></textarea>
+	<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" id="btn-comment">发表</button>
+<include file="./Home/Tpl/Common/footer.html" />
+<include file="./Home/Tpl/Common/foot.html" />

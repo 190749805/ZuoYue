@@ -1,0 +1,56 @@
+<include file='./Home/Tpl/Common/head.html' />
+<link rel="stylesheet" href="__PUBLIC__/Css/login.css">
+<include file='./Home/Tpl/Common/header.html' />
+	<br/>
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-8 login_panle">
+			<h1 class="login_h1_title">文件上传</h1>
+			<div class="col-md-7 login_border">
+				<br/>
+				<br/>
+				<br/>
+				<form class="form-horizontal" enctype="multipart/form-data" role="form" action="__URL__/upLoadFile" method="post">
+					  <div class="form-group">
+						<label for="exampleInputEmail1" class="col-sm-3 control-label">文件名</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" id="exampleInputEmail1" name="filename" placeholder="文件名">
+						</div>
+					  </div>
+					  <br/>
+					  <div class="form-group">
+						<label for="inputPassword3" class="col-sm-3 control-label">文&nbsp;&nbsp;&nbsp;&nbsp;件</label>
+						<div class="col-sm-9">
+						  <input type="file" class="form-control" id="inputPassword3" name="file" placeholder="文件">
+						</div>
+					  </div>
+					  <br/>
+					  <div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							
+							<button type="submit" class="btn btn-default">上传</button>
+							&nbsp;
+							<button type="button" class="btn btn-default">取消</button>
+					  </div>
+					  </div>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+				</form>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="col-md-12 head_row_head">
+				<include file='./Home/Tpl/Share/common.html'/>	
+			</div>
+		</div>
+		</div>
+<include file='./Home/Tpl/Common/footer.html' />
+<include file='./Home/Tpl/Common/foot.html' />

@@ -1,0 +1,142 @@
+body{
+	font-family:"微软雅黑";
+	background:#F9F9F9!important;
+}
+ul{
+	list-style-type:none;
+}
+.a{
+	color:#000000;
+}
+.logo{
+	margin-left:200px!important;
+}
+#the_logo{
+	font-size:21px;
+	margin-top:5px;
+}
+.the_p{
+	font-size:18px;
+	margin-top:5px;
+}
+.head_form{
+	margin-top:15px!important;
+}
+.form_input{
+	margin-top: -3px;
+}
+#null{
+	width: 100px;
+}
+.head_row{
+	border:1px solid #D4D4D4;
+}
+.head_row_p{
+	font-size: 18px;
+	color: black;
+	padding-top: 7px;
+	padding-left:5px;
+	font-weight: bold;
+}
+.some_news{
+	color:#000000;
+	font-size:18px;
+}
+.head_row_head{
+	border-top:1px solid #D4D4D4;
+}
+#search_type{
+	width: 70px;
+	height: 33px;
+}
+.all_btn{
+	width:200px;
+	height:40px;
+	font-size:14px;
+}
+.img_row{
+	background-image:url('../Images/u0.png');
+	background-repeat: no-repeat;
+	color:#FFFFFF;
+	font-size:24px;
+}
+.img_row_p{
+	padding-top: 15px;
+	padding-left: 120px;
+}
+#img_div{
+	border: 1px solid #eee;
+	width: 115px;
+	height: 100px;
+	padding-left: 6px;
+	padding-top: 5px;
+}
+#img_news_p{
+	position: absolute;
+	top: 12px;
+	left: 150px;
+	width: 400px;
+	font-size: 18px;
+}
+.d_table_p{
+	width:250px;
+}
+#talk{
+	font-size: 18px;
+	font-family: '微软雅黑';
+	padding-top: 10px;
+	font-weight: bold;
+}
+.select{
+	color:#FFFFFF!important;
+}
+.t_table_p{
+	width:450px;
+	text-align:left;
+	font-size:18px;
+}
+.t1_table_p{
+	width:450px;
+	text-align:right;
+	font-size:12px;
+}
+.rules{
+	background:#C83E21;
+	font-size:18px;
+	text-align:center;
+	color:#FFFFFF;
+	padding-top:16px;
+}
+.footer{
+	border-top: 1px solid #d7d7d7!important;
+	background:#000000;
+	margin-bottom:0px!important;
+	height:120px;
+}
+#h2-title{
+	background: #3276b1;
+	width: 147px;
+	height: 43px;
+	cursor: pointer;
+	position: absolute;
+	color:#FFFFFF;
+	top: 593px;
+	font-size:23px;
+	left: 861px;
+}
+#page{
+	position:absolute;
+	top:450px;
+}
+#foot{
+	position: absolute;
+	top:500px;
+}
+#div-title{
+	position: absolute;
+	top: 150px;
+	left: 200px;
+}
+.p_title_input{
+	font-size:24px;
+}

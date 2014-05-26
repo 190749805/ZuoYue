@@ -1,0 +1,48 @@
+<include file="./Home/Tpl/Common/head.html" />
+<script src="__PUBLIC__/Js/discuss.js"></script>
+<include file="./Home/Tpl/Common/header.html" />
+
+<div class="container">
+	
+	<div class="col-md-11 head_row" id="div-title-content">
+			<input type="hidden" name="session" id="hidden_input" value="{$session_id}"/>
+			<p id="talk"><img src="__PUBLIC__/Images/glyphicons_006_user_add.png"/> 主题讨论</p>
+			<div class="col-md-12 head_row_head">
+				<br/>
+				<p>{$info}</p>
+				
+				<table>	
+					<volist name="list" id="vo">
+						<tr>
+							<td class="t_table_p"><a class="a" name="{$vo.id}" href="__URL__/view_comment?id={$vo.id}"><p>{$vo.ttitle}</p></p></a></td>
+							<td class="t1_table_p"><p>{$vo.ttime}</p></td>
+						</tr>
+						<tr>
+							<td>浏览({$vo.llcs}) 评论({$vo.plcs})</td>
+				
+						</tr>
+					</volist>
+				</table>
+				
+				<div id="page">{$page}</div>
+			</div>
+	</div>
+	
+</div>
+<div><h2 class="btn" id="h2-title">+发表主题</h2></div>	
+<div class="container">
+	<div id="div-title" style="display:none;">
+		<p class="p_title_input">您可以在这里发表讨论的话题！</p>
+		<div>
+		  <p class="p_title_input">主题：</p><input type="text" placeholder="请输入主题" id="title"/>
+		  <span id="span-title" style="color:red;"></span>
+		</div>
+		<br/>
+		 <p class="p_title_input">内容：</p>
+		 <div><textarea name="content" id="content" cols="100" rows="10"></textarea>
+			<br/><br/>
+			<button type="button" class="btn btn-primary" id="qr">确认</button>
+			<button type="button" class="btn btn-primary" id="qx">取消</button>
+		</div>
+	</div>
+</div>

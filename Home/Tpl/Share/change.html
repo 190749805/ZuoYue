@@ -1,0 +1,56 @@
+<include file='./Home/Tpl/Common/head.html' />
+<link rel="stylesheet" href="__PUBLIC__/Css/login.css">
+<include file='./Home/Tpl/Common/header.html' />
+	<br/>
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-8 login_panle">
+			<h1 class="login_h1_title">属性修改</h1>
+			<div class="col-md-6 login_border">
+				<br/>
+				<br/>
+				<br/>
+				<form class="form-horizontal" role="form" action="__URL__/change_type" method="get">
+					  <div class="form-group">
+						<label for="exampleInputEmail1" class="col-sm-3 control-label">文件名</label>
+						<div class="col-sm-9">
+							<input type="email" class="form-control" id="exampleInputEmail1" Readonly="true" name="name" value="hehe">
+						</div>
+					  </div>
+					  <br/>
+					  <div class="form-group">
+						<label for="input" class="col-sm-3 control-label">属&nbsp;&nbsp;&nbsp;&nbsp;性</label>
+						  &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" checked="checked"  id="input_public" value="public" name="type" />公共
+						  &nbsp;&nbsp;<input type="radio"  id="input_private" value="private" name="type" />私有
+						
+					  </div>
+					  <br/>
+					  <div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							
+							<button type="submit" class="btn btn-default">修改</button>
+							&nbsp;
+							<button type="button" class="btn btn-default">取消</button>
+					  </div>
+					  </div>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+				</form>
+			</div>
+		</div>	
+		<div class="col-md-3">
+			<div class="col-md-12 head_row_head">
+				<include file='./Home/Tpl/Share/common.html'/>	
+			</div>
+		</div>
+		</div>
+	</div>
+	<br/>
+<include file='./Home/Tpl/Common/footer.html' />
+<include file='./Home/Tpl/Common/foot.html' />

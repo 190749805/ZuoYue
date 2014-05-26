@@ -1,0 +1,56 @@
+<include file='./Home/Tpl/Common/head.html' />
+<link rel="stylesheet" href="__PUBLIC__/Css/login.css">
+<include file='./Home/Tpl/Common/header.html' />
+	<br/>
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10 login_panle">
+			<h1 class="login_h1_title">邮箱验证</h1><p class="login_p_title">/没有账号，点击<a href="__APP__/Registre/index">注册</a></p>
+			<div class="col-md-6 login_border">
+				<br/>
+				<br/>
+				<br/>
+				<form class="form-horizontal" role="form" >
+					
+					<div class="form-group">
+						<label for="exampleInputEmail1" class="col-sm-2 control-label">第二步</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" Readonly="true" id="exampleInputEmail1" placeholder="{$success_info}">
+						</div>
+					  </div>
+					  <br/>
+					  <div class="form-group">
+						<label for="exampleInputEmail1" class="col-sm-2 control-label">提&nbsp;&nbsp;示</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="exampleInputEmail1" Readonly="true" placeholder="点击的登陆邮箱，找回密码">
+						</div>
+					  </div>
+					  <br/>
+					  
+					  <br/>
+					  <div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							
+							<a href="{$emailurl}" target="_blank"><button type="button" class="btn btn-default">进入邮箱</button></a>
+							&nbsp;
+							<button type="button" class="btn btn-default">取消</button>
+					  </div>
+					  </div>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+					  <br/>
+				</form>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+<include file='./Home/Tpl/Common/footer.html' />
+<include file='./Home/Tpl/Common/foot.html' />

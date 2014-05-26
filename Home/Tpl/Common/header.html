@@ -1,0 +1,56 @@
+<title>ZuoYue</title>
+</head>
+<body>
+	
+	<nav class="navbar  navbar-inverse" role="navigation">
+		<div class="container-fluid">
+					
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">ZuoYue</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<ul class="nav navbar-nav">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				<a class="navbar-brand logo" href="#"><p id="the_logo">ZuoYue</p></a>
+			</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					<ul class="nav navbar-nav navbar-center">
+							<li><a href="__APP__/Index/index" ><p class="the_p">首页</p></a></li>
+							<li><a href="__APP__/Publishzx/index"><p class="the_p">资讯</p></a></li>
+							<li><a href="__APP__/Discuss/index"><p class="the_p">讨论</p></a></li>
+							<li><a href="__APP__/Share/index" class="select"><p class="the_p">共享</p></a></li>
+							<li><p id="null"></p></li>
+							<li><form class="navbar-form navbar-left head_form" role="search">
+									<select id="search_type" name="type">
+										<option value="news" select="selected">资讯</option>
+										<option value="discuss">讨论</option>
+										<option value="share">共享</option>
+									</select>
+									&nbsp;
+									<div class="form-group">
+									  <input type="text" class="form-control form_input" placeholder="Search">
+									</div>
+									&nbsp;
+									<button type="submit" class="btn btn-default">搜索</button>
+								</form>
+							 </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="the_p">用户<b class="caret"></b></p></a>
+								<ul class="dropdown-menu">
+									<li>{$shows["info1"]}</li>
+									<li>{$shows["info2"]}</li>
+									<li><a href="__APP__/Login/view_passwd">修改密码</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+		</div>
+	</nav>

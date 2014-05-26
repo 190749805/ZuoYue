@@ -1,0 +1,78 @@
+<include file='./Home/Tpl/Common/head.html' />
+<include file='./Home/Tpl/Common/header.html' />
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-6">
+			<div class="row head_row">
+				<p class="head_row_p"><img src="__PUBLIC__/Images/glyphicons_036_file.png"></img> 热点资讯</p>
+				<div class="col-md-12 head_row_head">
+					<p class="some_news">
+						<div id="img_div"><img src="__PUBLIC__/Images/the_one.png"></img></div>
+						<div id="img_news_p">"程序员相亲，说：我是程序员。美女：程先生你好。程序员：叫我序员就好了 架构师相亲，说：我是架构师。...</div>
+					</p>
+					<table>
+					<for start="0" end="9" step="2">
+						<tr>
+							<td class="d_table_p"><a class="a" href="__APP__/Publishzx/view_zx?id={$list[$i]['id']}"><p>{$list[$i]['title']}</p></a></td>
+							<td class="d_table_p"><a class="a" href="__APP__/Publishzx/view_zx?id={$list[$i+1]['id']}"><p>{$list[$i+1]['title']}</p></a></td>
+						</tr>
+					</for>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-3 head_row">
+			<p class="head_row_p"><img src="__PUBLIC__/Images/glyphicons_144_folder_open.png"></img> 热门共享</p>
+			<div class="col-md-12 head_row_head">
+					<br/>
+					<p><button type="button" class="btn btn-primary all_btn">Mysql+php动态网站开发</button></p>
+					<p><button type="button" class="btn btn-primary all_btn">Mysql+php动态网站开发</button></p>
+					<p><button type="button" class="btn btn-primary all_btn">Mysql+php动态网站开发</button></p>
+					<p><button type="button" class="btn btn-primary all_btn">Mysql+php动态网站开发</button></p>
+					<p><button type="button" class="btn btn-primary all_btn">Mysql+php动态网站开发</button></p>
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+	<br/>
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-11 img_row">
+			<p class="img_row_p">php程序员交流的网站，最新资讯，一起讨论，资源共享</p>
+		</div>
+	</div>
+	<br/>
+	<div class="container">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-7 head_row">
+			<p id="talk"><img src="__PUBLIC__/Images/glyphicons_006_user_add.png"/> 话题讨论</p>
+			<div class="col-md-12 head_row_head">
+				<br/>
+				<table>
+					<volist name="va" id="vo">
+						<tr>
+							<td class="t_table_p"><a class="a" href="__APP__/Discuss/view_comment?id={$vo.id}"><p>&gt;{$vo.ttitle}</p></a></td>
+							<td class="t1_table_p"><p>{$vo.ttime}</p></td>
+						</tr>
+					</volist>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2 head_row rules">
+			<p>论坛规则</p>
+			<p>1.请文明发言</p>
+			<p>2.如需发言请登录</p>
+			<p>3.部分文件可下载</p>
+			<p>4.请检查您上传的文件</p>
+			<p>5.违规可被禁言</p>
+		</div>
+	</div>
+<include file='./Home/Tpl/Common/footer.html' />
+<include file='./Home/Tpl/Common/foot.html' />

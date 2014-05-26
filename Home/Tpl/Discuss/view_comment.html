@@ -1,0 +1,57 @@
+<include file="./Home/Tpl/Common/head.html" />
+<script src="__PUBLIC__/Js/discuss.js"></script>
+<include file="./Home/Tpl/Common/header.html" />
+
+<volist name="list" id="vo1">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-1 ">
+		</div>
+			<div class="col-md-9" style="background:#fff;">
+				<h1 id="{$vo1.id}">{$vo1.tcontent}</h1>
+					<hr style="border: 1px solid #ccc;width: 700px;margin-left: 0px;"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					发布人：{$name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：{$vo1.ttime}
+					
+					<div style="height:100px;width: 700px;"></div>
+					<p style="font-size:24px;">评论</p>
+					
+					<volist name="vo1['comment']" id="vo2">
+						<h3>{$vo2.ccontent}</h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						{$vo2.ctime} {$vo2.cusername}<a href="#" class="a-reply" name="a{$vo2.id}" id="{$vo2.id}">回复</a>
+						<hr style="border: 1px solid #ccc;width: 700px;margin-left: 0px;"/>
+						<span class="a-span" id="span-{$vo2.id}"></span>
+						<ul id="ul{$vo2.id}">
+							<volist name="vo2['reply']" id="vo3">
+								<li><h3>{$vo3.ccontent} </h3>&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								{$vo3.ctime}{$vo3.cusername}<a href="#" class="a-reply" name="a{$vo2.id}" id="{$vo3.id}">回复</a></li>
+								<li><hr style="border: 1px solid #ccc;width: 655px;margin-left: 0px;"/></li>
+								<span class="a-span" id="span-{$vo3.id}"></span>
+							</volist>
+						</ul>
+					</volist>
+				</div>
+		</div>
+		<div class="col-md-2">
+		</div>
+</volist>
+{$page}<br/>
+<volist name="list" id="vo">
+	<div class="row">
+		<div class="col-md-1 ">
+		</div>
+		<div class="col-md-8 ">
+			评论：<textarea id="textarea-comment" name="{$vo.id}" style="width:800px;height:120px;"></textarea>
+		<br/><br/>
+		<button type="button" class="btn btn-primary" data-toggle="dropdown" id="btn-comment">发表</button>
+		</div>
+</volist>
